@@ -16,9 +16,13 @@
             Euros €
             <input v-model="amount" type="number" placeholder="">
         </label>
+        <label for="yen">
+            Yen 
+            <input v-model="yenAmount" type="number" placeholder="">
+        </label>
 
         <h3>Converted to dollars: {{ convertToDollars }} </h3>
-        <h3>Converted to yens: </h3>
+        <h3>Converted to yens: {{ convertToYen }}  </h3>
     </main>
     <script type="module" src="app.js"></script>
 
